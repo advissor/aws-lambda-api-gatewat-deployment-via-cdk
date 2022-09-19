@@ -2,7 +2,7 @@
 # Welcome to your CDK Python project!
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`cdk_multienv_setup_stack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+which contains an Amazon Api Gateway Deployment with single Get Methode integrated with AWS Lambda function
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -25,12 +25,6 @@ step to activate your virtualenv.
 $ source .venv/bin/activate
 ```
 
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
-```
-
 Once the virtualenv is activated, you can install the required dependencies.
 
 ```
@@ -51,7 +45,7 @@ $ pytest
 ```
 
 To add additional dependencies, for example other CDK libraries, just add to
-your requirements.txt file and rerun the `pip install -r requirements.txt`
+your requirements.txt file and rerun the`pip install -r requirements-dev.txt` &  `pip install -r requirements.txt`
 command.
 
 ## Useful commands
@@ -62,4 +56,3 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
